@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>PT. AME — Tim AI Lembaga Inspeksi Teknis</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Inter,"Segoe UI",Roboto,Arial,sans-serif;background:#070d1f;color:#e6ecff;width:1200px}
+  .wrap{background:radial-gradient(ellipse at 50% -10%,#1d3f9a 0%,#0b1a45 35%,#070d1f 70%);padding:36px 40px 40px}
+  .top{display:flex;justify-content:space-between;align-items:center;font-weight:700;letter-spacing:.5px}
+  .top .l{color:#9fb3e8;font-size:15px}
+  .brand{display:flex;align-items:center;gap:10px}
+  .brand .mk{font:900 30px/1 Inter,Arial;color:#3d7bff;font-style:italic}
+  .brand .nm{font-size:13px;line-height:1.1;color:#dbe5ff}
+  h1{font:900 54px/1.02 "Arial Black",Inter,Arial;color:#3d7bff;text-transform:uppercase;margin:26px 0 12px;letter-spacing:-.5px}
+  h1 span{color:#fff}
+  .sub{color:#8fb0ff;font-size:19px;font-weight:600}
+  /* value chain */
+  .chain{display:flex;gap:6px;margin:26px 0 8px}
+  .step{flex:1;background:linear-gradient(180deg,#14275e,#0f1d47);border:1px solid #2a4590;padding:10px 8px 10px 14px;font-size:12.5px;font-weight:700;color:#dce6ff;position:relative;clip-path:polygon(0 0,92% 0,100% 50%,92% 100%,0 100%,8% 50%)}
+  .step:first-child{clip-path:polygon(0 0,92% 0,100% 50%,92% 100%,0 100%)}
+  .step small{display:block;font-weight:500;color:#8ea6e0;font-size:10.5px;margin-top:2px}
+  .step.h{background:linear-gradient(180deg,#5a2a12,#3b1a0a);border-color:#c76a2a}
+  .legend{font-size:11.5px;color:#8ea6e0;margin-bottom:6px}
+  .legend b{color:#ffb27a}
+  /* org */
+  .sec{display:flex;align-items:baseline;gap:16px;margin:30px 0 18px}
+  .sec h2{font:900 40px/1 "Arial Black",Inter,Arial;color:#3d7bff}
+  .sec p{color:#c9d6ff;font-size:17px}
+  .row{display:flex;justify-content:center;gap:14px;position:relative}
+  .card{background:#111a33;border:1px solid #26365f;border-radius:12px;padding:14px;display:flex;gap:12px;align-items:flex-start}
+  .card.v{flex-direction:column;align-items:center;text-align:center;padding:14px 8px}
+  .ic{width:46px;height:46px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;font:800 15px Inter,Arial;color:#fff;border:2px solid rgba(255,255,255,.15)}
+  .tag{display:inline-block;background:#2f6bff;color:#fff;font-size:10.5px;font-weight:800;padding:3px 10px;border-radius:20px;letter-spacing:.6px;margin-bottom:5px}
+  .role{color:#5b92ff;font-size:12.5px;font-weight:700;line-height:1.2}
+  .tool{color:#fff;font-size:17px;font-weight:800;margin:2px 0 3px}
+  .desc{color:#a9b6d6;font-size:12px;line-height:1.35}
+  .lead .card{width:360px}
+  .plat .card{width:262px}
+  .core .card{width:154px;min-height:212px}
+  .supp .card{width:182px;min-height:180px}
+  .conn{height:22px;position:relative}
+  .conn:before{content:"";position:absolute;left:50%;top:0;height:100%;border-left:2px solid #2f5bd0}
+  .bar{height:2px;background:#2f5bd0;margin:0 70px}
+  .grp{font-size:12px;font-weight:800;letter-spacing:1.4px;color:#6f8bd6;text-transform:uppercase;text-align:center;margin:10px 0 10px}
+  /* bottom */
+  .bottom{display:grid;grid-template-columns:1.45fr 1fr;gap:16px;margin-top:28px}
+  .box{border-radius:12px;padding:16px 18px}
+  .red{background:#2a0f14;border:1px solid #8a2a35}
+  .red h3{color:#ff6b7a}
+  .kpi{background:#0f1d3f;border:1px solid #2a4590}
+  .kpi h3{color:#5b92ff}
+  .box h3{font:900 18px "Arial Black",Inter,Arial;margin-bottom:10px;letter-spacing:.3px}
+  .box ol,.box ul{padding-left:18px}
+  .box li{font-size:12.5px;line-height:1.42;color:#e3e8f7;margin-bottom:6px}
+  .box li b{color:#fff}
+  .note{font-size:11px;color:#8ea6e0;margin-top:8px;font-style:italic}
+  .foot{margin-top:18px;text-align:center;font-size:11.5px;color:#6f84b8}
+</style>
+</head>
+<body><div class="wrap">
+
+<div class="top">
+  <div class="l">AI-ENABLED INSPECTION BODY</div>
+  <div class="brand"><div class="mk">AME</div><div class="nm">PT. AME<br>Lembaga Inspeksi Teknis</div></div>
+</div>
+
+<h1>Automasi Operasional<br><span>Lembaga Inspeksi Teknis</span><br>dengan AI</h1>
+<div class="sub">Dari tender sampai sertifikat: lebih cepat, terlacak, dan siap audit KAN</div>
+
+<div class="chain">
+  <div class="step">1. Tender<small>pantau &amp; seleksi</small></div>
+  <div class="step">2. Penawaran<small>RAB &amp; metodologi</small></div>
+  <div class="step">3. Penjadwalan<small>matching inspektur</small></div>
+  <div class="step h">4. Inspeksi<small>lapangan oleh inspektur</small></div>
+  <div class="step">5. Draf Laporan<small>dari data lapangan</small></div>
+  <div class="step h">6. Review Teknis<small>verifikasi &amp; keputusan</small></div>
+  <div class="step h">7. Sertifikat<small>tanda tangan berwenang</small></div>
+  <div class="step">8. Re-inspeksi<small>reminder masa berlaku</small></div>
+</div>
+<div class="legend"><b>Oranye</b> = keputusan teknis tetap di tangan inspektur/personel berwenang. AI hanya mempercepat tahap biru dan menyiapkan bahan untuk tahap oranye.</div>
+
+<div class="sec"><h2>TIM AI KAMI</h2><p>Yang bantu jalankan tender, inspeksi, pelaporan, dan kepatuhan</p></div>
+
+<div class="row lead">
+  <div class="card"><div class="ic" style="background:#0b1430;border-color:#3d7bff">DIR</div><div>
+    <span class="tag">DIREKSI</span><div class="tool">Direksi PT. AME</div>
+    <div class="desc">Strategi, akuntabilitas, imparsialitas, dan otorisasi akhir.</div></div></div>
+  <div class="card"><div class="ic" style="background:#f4e8de;color:#d9653b">✳</div><div>
+    <span class="tag">CO-PILOT</span><div class="tool">Claude</div>
+    <div class="desc">Mitra berpikir, analisis dokumen teknis, drafting, dan problem solving.</div></div></div>
+</div>
+<div class="conn"></div><div class="bar"></div><div class="conn" style="height:14px"></div>
+
+<div class="row plat">
+  <div class="card"><div class="ic" style="background:#111;border-color:#fff">&gt;_</div><div>
+    <div class="role">Dibangun di</div><div class="tool">Claude Code</div>
+    <div class="desc">Bangun template laporan, integrasi, dan script otomasi.</div></div></div>
+  <div class="card"><div class="ic" style="background:#ea4b71">n8n</div><div>
+    <div class="role">Berjalan di</div><div class="tool">n8n (self-hosted)</div>
+    <div class="desc">Orkestrasi semua workflow; data tetap di server sendiri.</div></div></div>
+  <div class="card"><div class="ic" style="background:#1fa463">GW</div><div>
+    <div class="role">Sumber data tunggal</div><div class="tool">Google Workspace</div>
+    <div class="desc">Drive (DMS terkendali), Sheets (register), Calendar.</div></div></div>
+  <div class="card"><div class="ic" style="background:#2aabee">TG</div><div>
+    <div class="role">Lapor via</div><div class="tool">Telegram + WA Business</div>
+    <div class="desc">Telegram untuk alert internal; WhatsApp untuk klien.</div></div></div>
+</div>
+
+<div class="grp">— Lini Operasi Inti —</div>
+<div class="row core">
+  <div class="card v"><div class="ic" style="background:#e8492c">AP</div>
+    <div class="role">Head of Tender Intel</div><div class="tool">Apify</div>
+    <div class="desc">Pantau LPSE, e-proc BUMN &amp; KKKS publik; filter tender inspeksi relevan.</div></div>
+  <div class="card v"><div class="ic" style="background:#d9653b">✳</div>
+    <div class="role">Proposal Officer</div><div class="tool">Claude</div>
+    <div class="desc">Draf penawaran, RAB, metodologi &amp; dokumen kualifikasi.</div></div>
+  <div class="card v"><div class="ic" style="background:#4285f4">CAL</div>
+    <div class="role">Dispatcher</div><div class="tool">n8n + Calendar</div>
+    <div class="desc">Cocokkan inspektur dengan lingkup, lokasi &amp; masa berlaku lisensi.</div></div>
+  <div class="card v"><div class="ic" style="background:#1d6fb8">KB</div>
+    <div class="role">Field Data Capture</div><div class="tool">KoboToolbox</div>
+    <div class="desc">Checklist digital offline, foto, GPS, voice note di lokasi terpencil.</div></div>
+  <div class="card v"><div class="ic" style="background:#d9653b">✳</div>
+    <div class="role">Report Drafter</div><div class="tool">Claude</div>
+    <div class="desc">Susun draf laporan dari data lapangan + template per jenis alat.</div></div>
+  <div class="card v"><div class="ic" style="background:#7a4bd6">QA</div>
+    <div class="role">Pre-Review Checker</div><div class="tool">Claude</div>
+    <div class="desc">Cek kelengkapan, konsistensi angka &amp; acuan standar sebelum reviewer.</div></div>
+  <div class="card v"><div class="ic" style="background:#0f9d8a">QR</div>
+    <div class="role">Certificate Control</div><div class="tool">Sheets + QR</div>
+    <div class="desc">Penomoran, register, dan QR verifikasi keaslian sertifikat.</div></div>
+</div>
+
+<div class="grp" style="margin-top:18px">— Fungsi Pendukung —</div>
+<div class="row supp">
+  <div class="card v"><div class="ic" style="background:#25d366">WA</div>
+    <div class="role">Head of Retention</div><div class="tool">n8n + WhatsApp</div>
+    <div class="desc">Reminder 90/60/30 hari sebelum sertifikat habis → order re-inspeksi.</div></div>
+  <div class="card v"><div class="ic" style="background:#20808d">PX</div>
+    <div class="role">Regulatory Watch</div><div class="tool">Perplexity</div>
+    <div class="desc">Pantau JDIH Kemnaker, ESDM/Migas, KAN &amp; BSN; ringkas dampaknya.</div></div>
+  <div class="card v"><div class="ic" style="background:#7c3aed">OB</div>
+    <div class="role">Head of Knowledge</div><div class="tool">Obsidian</div>
+    <div class="desc">SOP, standar acuan, instruksi kerja &amp; lessons learned.</div></div>
+  <div class="card v"><div class="ic" style="background:#fcb400;color:#222">AT</div>
+    <div class="role">Competency &amp; Akreditasi</div><div class="tool">Airtable</div>
+    <div class="desc">Matriks kompetensi, audit internal &amp; kesiapan surveilans KAN.</div></div>
+  <div class="card v"><div class="ic" style="background:#0a66c2">AC</div>
+    <div class="role">Finance &amp; Collections</div><div class="tool">Accurate Online</div>
+    <div class="desc">Invoice otomatis saat laporan terbit; penagihan piutang terjadwal.</div></div>
+  <div class="card v"><div class="ic" style="background:#222;border-color:#ddd">PL</div>
+    <div class="role">Meeting Notetaker</div><div class="tool">Plaud</div>
+    <div class="desc">Catat opening/closing meeting &amp; temuan; langsung jadi notulen.</div></div>
+</div>
+
+<div class="bottom">
+  <div class="box red">
+    <h3>GARIS MERAH: YANG TIDAK BOLEH DIOTOMASI</h3>
+    <ol>
+      <li><b>AI menyusun draf; inspektur memutuskan.</b> Tidak ada laporan atau sertifikat terbit tanpa verifikasi dan tanda tangan personel kompeten (ISO/IEC 17020 dan ketentuan penunjukan Kemnaker/Migas).</li>
+      <li><b>Imparsialitas.</b> Workflow komersial (tender, penawaran, penagihan) terpisah dari workflow teknis. Sales tidak punya akses ubah hasil inspeksi.</li>
+      <li><b>Kerahasiaan data klien.</b> Data instalasi, gambar teknis dan objek vital: akses berbasis peran, log audit, kepatuhan UU PDP No. 27/2022.</li>
+      <li><b>Tools adalah bagian sistem manajemen.</b> Template, prompt dan workflow dikendalikan versinya, divalidasi, dan siap diperiksa asesor.</li>
+      <li><b>Patuhi ToS portal.</b> Portal yang butuh login tidak di-scrape; gunakan notifikasi resmi.</li>
+    </ol>
+  </div>
+  <div class="box kpi">
+    <h3>KPI YANG DIUKUR</h3>
+    <ul>
+      <li><b>Lead time laporan:</b> hari dari selesai inspeksi sampai sertifikat terbit</li>
+      <li><b>Tingkat revisi:</b> % draf yang dikembalikan reviewer teknis</li>
+      <li><b>Konversi re-inspeksi:</b> % sertifikat jatuh tempo yang jadi order baru</li>
+      <li><b>Win rate tender:</b> menang vs. tender yang diikuti</li>
+      <li><b>DSO:</b> hari rata-rata penagihan piutang</li>
+      <li><b>Temuan audit KAN</b> terkait dokumen dan rekaman</li>
+    </ul>
+    <div class="note">Ukur baseline 1–2 bulan sebelum otomasi. Tanpa baseline, klaim efisiensi tidak bisa dibuktikan.</div>
+  </div>
+</div>
+
+<div class="foot">PT. AME · Lembaga Inspeksi Teknis · Arsitektur AI operasional v1</div>
+</div></body></html>
